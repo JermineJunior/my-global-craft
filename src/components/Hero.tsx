@@ -13,10 +13,10 @@ export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
       <div className="container mx-auto text-center space-y-8 animate-in fade-in duration-1000">
-        <div className="space-y-4">
+        <div className="space-y-4 typewriter">
           <p className="text-lg text-muted-foreground">{t('hero.greeting')}</p>
           <h1 className="text-5xl md:text-7xl font-bold text-foreground">
-            Mohammed Ibrahim
+            {t('hero.name')}
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold text-primary">
             {t('hero.title')}
@@ -27,15 +27,15 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             onClick={() => scrollToSection('projects')}
             className="transition-transform hover:scale-105"
           >
             {t('hero.cta')}
           </Button>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             variant="outline"
             onClick={() => scrollToSection('contact')}
             className="transition-transform hover:scale-105"
@@ -45,24 +45,16 @@ export const Hero = () => {
         </div>
 
         <div className="flex gap-6 justify-center pt-8">
-          <a 
-            href="https://github.com" 
-            target="_blank" 
+          <a
+            href="https://github.com/JermineJunior"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-3xl text-muted-foreground hover:text-primary transition-colors"
           >
             <FaGithub />
           </a>
-          <a 
-            href="https://linkedin.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-3xl text-muted-foreground hover:text-primary transition-colors"
-          >
-            <FaLinkedin />
-          </a>
-          <a 
-            href="mailto:ahmed@example.com"
+          <a
+            href="mailto:mohammedjunior159@gmail.com"
             className="text-3xl text-muted-foreground hover:text-primary transition-colors"
           >
             <FaEnvelope />

@@ -18,6 +18,7 @@ const translations = {
     
     // Hero
     'hero.greeting': 'Hi, I\'m',
+    'hero.name': "Mohammed Ibrahim",
     'hero.title': 'Full Stack Web Developer',
     'hero.description': 'Passionate about creating elegant solutions to complex problems',
     'hero.cta': 'View My Work',
@@ -56,6 +57,7 @@ const translations = {
     
     // Hero
     'hero.greeting': 'مرحباً، أنا',
+    'hero.name': "محمد إبراهيم",
     'hero.title': 'مطور ويب متكامل',
     'hero.description': 'شغوف بإنشاء حلول أنيقة للمشكلات المعقدة',
     'hero.cta': 'عرض أعمالي',

@@ -41,7 +41,7 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="p-6 bg-card border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="p-6 bg-card border-border border-blue-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-foreground">
