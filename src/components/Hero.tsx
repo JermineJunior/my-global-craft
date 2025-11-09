@@ -16,7 +16,7 @@ export const Hero = () => {
         <div className="space-y-4">
           <p className="text-lg text-muted-foreground">{t('hero.greeting')}</p>
           <h1 className="text-5xl md:text-7xl font-bold text-foreground">
-            Ahmed Saleh
+            Mohammed Ibrahim
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold text-primary">
             {t('hero.title')}

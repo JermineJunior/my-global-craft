@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="py-8 px-4 border-t border-border bg-card">
       <div className="container mx-auto text-center">
         <p className="text-muted-foreground">
-          © {currentYear} Ahmed Saleh. {t('footer.rights')}.
+          © {currentYear} Mohammed Ibrahim. {t('footer.rights')}.
         </p>
       </div>
     </footer>

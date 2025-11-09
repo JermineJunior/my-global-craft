@@ -9,8 +9,8 @@ export const Contact = () => {
     {
       icon: <FaEnvelope className="text-3xl" />,
       label: t('contact.email'),
-      value: 'ahmed.saleh@example.com',
-      link: 'mailto:ahmed.saleh@example.com',
+      value: 'mohammed.ibrahim@example.com',
+      link: 'mailto:mohammed.ibrahim@example.com',
     },
     {
       icon: <FaPhone className="text-3xl" />,

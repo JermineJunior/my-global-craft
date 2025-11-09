@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card } from '@/components/ui/card';
-import { FaReact, FaNode, FaDatabase, FaGitAlt, FaDocker } from 'react-icons/fa';
+import { FaReact, FaNode, FaDatabase, FaGitAlt, FaDocker, FaPhp, FaLaravel } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql } from 'react-icons/si';
 
 export const About = () => {
@@ -14,6 +14,8 @@ export const About = () => {
     ],
     backend: [
       { icon: <FaNode className="text-3xl" />, name: 'Node.js' },
+      { icon: <FaPhp className="text-3xl" />, name: 'PHP' },
+      { icon: <FaLaravel className="text-3xl" />, name: 'Laravel' },
       { icon: <FaDatabase className="text-3xl" />, name: 'REST APIs' },
       { icon: <SiMongodb className="text-3xl" />, name: 'MongoDB' },
       { icon: <SiPostgresql className="text-3xl" />, name: 'PostgreSQL' },
@@ -67,7 +69,7 @@ export const About = () => {
               <h4 className="text-xl font-semibold mb-6 text-primary">
                 {t('about.backend')}
               </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                 {skills.backend.map((skill, index) => (
                   <div 
                     key={index}

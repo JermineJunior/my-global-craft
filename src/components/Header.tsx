@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 import { Button } from '@/components/ui/button';
 
 export const Header = () => {
@@ -31,6 +32,7 @@ export const Header = () => {
             </Button>
           </div>
           
+          <ThemeToggle />
           <LanguageSwitcher />
         </div>
       </nav>
