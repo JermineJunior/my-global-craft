@@ -2,7 +2,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
-
 export const Header = () => {
   const { t } = useLanguage();
 
@@ -13,14 +12,13 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border border-blue-300">
-
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('home')}>
+        <div className="flex items-center gap-3 cursor-pointer" dir="ltr" onClick={() => scrollToSection('home')}>
           <svg width="45" height="45" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="gradientMI" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style={{stopColor:"#2a75bb", stopOpacity:1}} />
-                <stop offset="100%" style={{stopColor:"#4a4e69", stopOpacity:1}} />
+                <stop offset="0%" style={{stopColor:"#2a75bb", stopOpacity:2}} />
+                <stop offset="100%" style={{stopColor:"#4a4e69", stopOpacity:2}} />
               </linearGradient>
             </defs>
             <g>
@@ -33,11 +31,10 @@ export const Header = () => {
             </g>
           </svg>
           <div className="hidden sm:block">
-            <div className="text-sm font-bold text-foreground">Mohammed Ibrahim</div>
-            <div className="text-xs text-muted-foreground">Software Engineer</div>
+            <div className="text-sm font-bold text-foreground">{ t("hero.name") }</div>
+            <div className="text-xs text-muted-foreground">{ t("logo.title") }</div>
           </div>
         </div>
-        
         <div className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" onClick={() => scrollToSection("home")}>

@@ -15,6 +15,7 @@ const translations = {
     'nav.about': 'About',
     'nav.projects': 'Projects',
     'nav.contact': 'Contact',
+    'logo.title': 'Softwere Engineer',
     
     // Hero
     'hero.greeting': 'Hi, I\'m',
@@ -54,6 +55,7 @@ const translations = {
     'nav.about': 'عن',
     'nav.projects': 'المشاريع',
     'nav.contact': 'تواصل',
+    'logo.title': 'مهندس برمجيات',
     
     // Hero
     'hero.greeting': 'مرحباً، أنا',
